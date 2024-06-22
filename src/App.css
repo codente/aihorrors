@@ -87,8 +87,13 @@ main .listing {
     flex-grow: 0;
 }
 
-main .listing .listing--image {
+main .listing--image {
+  display: flex;
+  justify-content: center;
+}
 
+main .listing--image img {
+  max-width: 50%;
 }
 
 
