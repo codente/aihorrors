@@ -10,6 +10,6 @@ export const data = [
 	},
      {
 	 "alt": "An AI generated logo that adds extra text to the logo. The prompt was a logo for a construction company named A1 construction.",
-	"img": "aihorror2.webp",
+	"img": "aihorror3.webp",
 	}
  ]
