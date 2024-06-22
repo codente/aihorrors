@@ -21,10 +21,10 @@ const [ image, setImage ] = useState(null);
 
   return (
     <>
-    
-    {image && <Image alt={image.alt} img={image.img} />}
-    
-    <button
+  
+    {image && <Image alt={image.alt} img={image.img} />
+    }
+       <button
     onClick={handleClick}
     >
         Generate another image

@@ -2,8 +2,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: #333;
+  font: 1.25em  / 1 -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
   /* Dark gray text */
 }
 
@@ -25,6 +31,11 @@ button {
   border-radius: 15px;
   font-weight: bold;
   color: white;
+  padding: 1em;
+  font-size: 100%;
+}
+button:hover {
+  background: linear-gradient(180deg, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
 a, a:link {
@@ -58,65 +69,29 @@ header h2 {
 
 /* Main content styles */
 main {
-  display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
-  
 }
 
 
-
-main img {
-  width: 50%;
-  height: 50%;
+main .listing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    flex-grow: 0;
 }
 
-.image-container {
-  width: 400px;
-  height: 300px;
-  background-color: #f1f1f1;
-  /* Light gray background for placeholder */
-  overflow: hidden;
-  /* Hide overflow if image is larger */
-  border-radius: 5px;
-  /* Rounded corners */
-  margin-bottom: 20px;
-  cursor: pointer;
-  /* Change cursor to pointer on hover */
+main .listing .listing--image {
+
 }
 
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Scale image to fit container */
-  transition: transform 0.3s ease-in-out;
-  /* Smooth transition on hover */
-}
 
-.image-container:hover img {
-  transform: scale(1.1);
-  /* Zoom image slightly on hover */
-}
-
-button {
-  background-color: #f7931a;
-  /* Orange */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-button:hover {
-  background-color: #f57c00;
-  /* Darken orange on hover */
-}
 
 /* Footer styles */
 footer {
